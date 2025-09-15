@@ -1,3 +1,12 @@
+function importJSONupdate() {
+var d = new Date();
+var timeStamp = d.toLocaleTimeString();
+var cellValue = '=ImportJSONBasicAuth(""https://www.bitkub.com/api/market/mar..."","""","""", ""/data"", ""noInherit, noTruncate"",""' + timeStamp + '"")';
+SpreadsheetApp.openById(""13pdkpoVRM48CerbcfTGKdMSJXqoPitUzEU86rg-covo"").getSheetByName(""Cryto_Watch list"").getRange(""B2"").setValue(cellValue)
+}
+
+
+
 /*====================================================================================================================================*
   ImportJSON by Brad Jasper and Trevor Lohrbeer
   ====================================================================================================================================
